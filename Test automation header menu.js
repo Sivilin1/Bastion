@@ -50,7 +50,7 @@ describe("Click link", function() {
         cy.get('.top-nav-item > [href="/pages/support"]').click()
         cy.get('.current > .side-menu-sub > :nth-child(2) > a').click()
         cy.get('.current > .side-menu-sub > :nth-child(3) > a').click()
-        cy.wait (2000)
+        
 
 
         })
