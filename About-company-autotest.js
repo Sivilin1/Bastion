@@ -11,8 +11,6 @@ describe("Click link", function() {
         cy.get('.current > .side-menu-sub > :nth-child(5) > a').click()
         cy.get('.current > .side-menu-sub > :nth-child(6) > a').click()
         cy.get('tbody > :nth-child(1) > :nth-child(2) > input').type('Alex')
-        //cy.get('#region').click()
-        //cy.contains('[role="option"]', 'value="18"' .click()
         cy.get('#region').select("Odes'ka Oblast'")
         cy.get(':nth-child(3) > :nth-child(2) > input').type('Autoparts')
         cy.get(':nth-child(4) > :nth-child(2) > input').type('Alex')
