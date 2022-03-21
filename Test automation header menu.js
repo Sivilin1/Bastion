@@ -1,6 +1,6 @@
 describe("Click link", function() {
     it("About company", function () {
-        cy.visit('http://www.bastion.com.ua/')
+        cy.visit('http://www.sitename/')
         cy.wait(2000)
         cy.get('.top-nav-item > [href="/pages/about_company"]').click()
         cy.wait(2000)
@@ -14,8 +14,8 @@ describe("Click link", function() {
         cy.get('#region').select("Odes'ka Oblast'")
         cy.get(':nth-child(3) > :nth-child(2) > input').type('Autoparts')
         cy.get(':nth-child(4) > :nth-child(2) > input').type('Alex')
-        cy.get(':nth-child(5) > :nth-child(2) > input').type('0639567646')
-        cy.get(':nth-child(6) > :nth-child(2) > input').type('24auto@gmail.com')
+        cy.get(':nth-child(5) > :nth-child(2) > input').type('1111')
+        cy.get(':nth-child(6) > :nth-child(2) > input').type('1111@gmail.com')
         cy.get('textarea').type('Автоматизация на Cypress')
         cy.get('[valign="top"] > [type="text"]').type(7+7+7)
         cy.contains("Отправить").click()
